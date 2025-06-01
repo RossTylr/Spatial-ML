@@ -1,0 +1,40 @@
+name: spatial-ml-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python
+  - python=3.10 # Or your preferred version like 3.9, 3.11
+
+  # Jupyter environment
+  - jupyterlab
+  - notebook
+
+  # Core data science and numerical
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+
+  # Geospatial stack
+  - geopandas
+  - shapely
+  - pyproj
+  - fiona
+  - rasterio
+  - contextily
+
+  # Plotting
+  - matplotlib
+  - seaborn
+
+  # Optional: For more advanced optimization or specific tasks
+  # - pulp
+  # - osmnx
+  # - pykrige
+  # - pointpats
+
+  # Utility
+  - pip
+  # - pip:
+  #   - some-pypi-package
