@@ -4,11 +4,13 @@ channels:
   - defaults
 dependencies:
   # Core Python
-  - python=3.10 # Or your preferred version like 3.9, 3.11
+  - python=3.10
 
   # Jupyter environment
   - jupyterlab
   - notebook
+  - ipywidgets # For interactive notebooks
+  - ipyleaflet # For interactive maps
 
   # Core data science and numerical
   - numpy
@@ -24,17 +26,26 @@ dependencies:
   - rasterio
   - contextily
 
+  # Network Analysis
+  - osmnx
+  - networkx
+
+  # Spatial Statistics (PySAL family)
+  - esda
+  - libpysal
+  - pointpats
+  
+  # Geostatistics
+  - pykrige
+
+  # Optimization
+  - pulp
+
   # Plotting
   - matplotlib
   - seaborn
-
-  # Optional: For more advanced optimization or specific tasks
-  # - pulp
-  # - osmnx
-  # - pykrige
-  # - pointpats
-
+  
   # Utility
+  - requests # For downloading data
   - pip
-  # - pip:
-  #   - some-pypi-package
+
