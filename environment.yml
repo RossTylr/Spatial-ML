@@ -25,6 +25,7 @@ dependencies:
   - fiona
   - rasterio
   - contextily
+  - geodatasets # For loading sample data
 
   # Network Analysis
   - osmnx
@@ -48,4 +49,6 @@ dependencies:
   # Utility
   - requests # For downloading data
   - pip
+  - pip:
+    - faiss-cpu # For accelerated similarity search
 
